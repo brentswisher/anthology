@@ -6,7 +6,8 @@ const meta = {
   component: Button,
   args: {
     children: 'Button',
-    size: 'medium',
+    variant: 'primary', // These are only needed to set the default values in the controls match the programmatic defaults
+    size: 'medium', // These are only needed to set the default values in the controls match the programmatic defaults
     disabled: false,
   },
   argTypes: {
@@ -20,6 +21,7 @@ const meta = {
 } satisfies Meta;
 
 export default meta;
+
 type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = {
