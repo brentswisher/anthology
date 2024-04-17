@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { Button } from './button';
 
 const meta = {
-  title: 'Button',
+  title: 'Component/Button',
   component: Button,
   args: {
     children: 'Button',
@@ -11,11 +11,19 @@ const meta = {
     disabled: false,
   },
   argTypes: {
+    children: {
+      name: 'label',
+      control: 'text',
+      table: {
+        disable: false,
+      },
+    },
     variant: {
       control: 'select',
     },
     size: {
       control: 'select',
+      options: [],
     },
   },
 } satisfies Meta;
